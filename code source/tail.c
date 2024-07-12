@@ -78,8 +78,8 @@ FILE *option(int argc, char *argv[])
 	}
 	else if(strcmp(argv[1],"-v")==0)
 	{
-		printf("Nom du fichier: %s\n\n",argv[2]);
 		option_sans(argv);
+		printf("Nom du fichier: %s\n",argv[2]);
 	}
 	else if(strcmp(argv[1],"-q")==0)
 	{
