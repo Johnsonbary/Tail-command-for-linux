@@ -127,7 +127,6 @@ FILE *option_f(char *argv[])
 		if(count > nombre )
 		{
 			rewind(fichier);
-			//afficher(fichier, nombre, count);
 			for(i = 0; feof(fichier) != 1; i++)
 			{
 				fgets(mot, 200, fichier);
@@ -141,7 +140,6 @@ FILE *option_f(char *argv[])
 		else if(count < nombre)
 		{
 			rewind(fichier);
-			//afficher(fichier, nombre, count);
 			for(i = 0; feof(fichier) != 1; i++)
 			{
 				fgets(mot, 200, fichier);
@@ -175,8 +173,8 @@ FILE *option_c(char *argv[])
 	FILE *fichier = NULL;
 	int longueur;
 	int result;
-	int i,
-		j;
+	int i;
+	int j;
 	char mot[200];
 	fichier = ouverture(argv[3]);
 	result = atoi(argv[2]);
