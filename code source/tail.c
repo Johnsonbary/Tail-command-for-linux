@@ -210,8 +210,8 @@ FILE *option_n(char *argv[])
 	FILE *fichier = NULL;
 	int result;
 	int count;
-	result = atoi(argv[2]);
 	fichier = ouverture(argv[3]);
+	result = atoi(argv[2]);
 	count = compter(fichier);
 	rewind(fichier);
 	afficher(fichier, count, result);
